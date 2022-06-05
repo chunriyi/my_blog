@@ -1,0 +1,40 @@
+{% extends "base.html" %} 
+{% comment %} without BASE_DIR / "templates" in setting.py, it would fail {% endcomment %}
+{% load static %}
+
+{% block title %}
+  My Blog
+{% endblock %}
+
+{% block css_files %}
+    <link rel="stylesheet" href="{% static "blog/post.css" %}" />
+    <link rel="stylesheet" href="{% static "blog/index.css" %}" />
+{% endblock %}
+
+{% block content %}
+
+    <section id="welcome">
+        <header>
+            <img src="{% static "blog/images/april1.jpg" %}" alt="April - The Auther of This Blog" />
+            <h2>APRIL'S BLOG</h2>
+        </header>
+        <p>Hi, I am April and I love to blog about tech and the world!</p>
+    </section>
+
+    <section id="latest-posts">
+        <h2>My Latest Thoughts</h2>
+        
+        <ul>
+            {% for post in posts %}
+                {% include "blog/includes/post.html" %}
+            {% endfor %}
+        </ul>
+    </section>
+
+    <section id="about">
+        <h2>about</h2>
+        <p>Paragraph1</p>
+        <p>Paragraph2</p>
+    </section>
+    <h1>Welcome to my blog</h1>
+{% endblock %}

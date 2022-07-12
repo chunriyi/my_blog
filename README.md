@@ -2,7 +2,7 @@
 
 PROJECT DESCRIPTION
 --------------------
-I developed a personal blog management system that shows the blog owner's selfie, all posts, and stored posts for a later visit on the welcome page. Site visitors can see the post details and comments on each post.
+I developed a personal blog management system that shows the blog owner's selfies, all posts, and stored posts for the later visit on the welcome page. Site visitors can see the post details and comments on each post.
 The blog owner can make posts in Django administration. Each post includes a title, date, author, uploaded image, description, and tags.
 
 Please use the AWS server link 'http://djangoblog-env.eba-t5fpkywv.us-east-1.elasticbeanstalk.com/' to access the website.
@@ -18,7 +18,3 @@ Others: HTTP protocol
 MAINTAINER
 --------------------
 * April Zhang
-
-
-
-
